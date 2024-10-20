@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOCSS Example with CSS and HTML</title>
+    <style>
+        /* Centering the body content */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Centering header */
+        .site-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .site-title {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        /* Card styling and centering */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-size: 1.75em;
+            margin-bottom: 10px;
+        }
+
+        .card-content {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        /* Button base (structure) */
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Skin classes for buttons */
+        .btn-primary {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1 class="site-title">Act 49 Research OOCSS - Object-Oriented CSSL</h1>
+    </header>
+
+    <main class="cards-container">
+        <!-- Reusable Card Component with Larger Images -->
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+            <h2 class="card-title">Python</h2>
+            <p class="card-content">Python is a versatile programming language known for its simplicity and readability.</p>
+            <button class="btn btn-primary">Learn More</button>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo">
+            <h2 class="card-title">CSS</h2>
+            <p class="card-content">CSS is used to style and layout web pages, making them visually appealing.</p>
+            <button class="btn btn-primary">Learn More</button>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+            <h2 class="card-title">HTML</h2>
+            <p class="card-content">HTML is the standard language for creating web pages and web applications.</p>
+            <button class="btn btn-primary">Learn More</button>
+        </div>
+    </main>
+
+    <!-- Centered Button at the Bottom -->
+    <button class="btn btn-secondary">Cancel</button>
+
+</body>
+</html>
